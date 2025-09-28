@@ -1,3 +1,19 @@
-.main, .body {
+main {
+    display: flex;
+    flex-direction: row;
+   
+}
+body{
   display: flex;
+  flex-direction: column;
+}
+
+article {
+    flex: 2;
+    overflow: auto;
+}
+
+aside {
+    flex: 1;
+    overflow: auto;
 }
