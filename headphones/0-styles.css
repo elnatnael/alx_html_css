@@ -4,6 +4,10 @@ body {
     background-size: cover;
     margin-left: 10%;
     margin-right: 10%;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0; 
      /* Remove default body margin */
 }
 .logo-container {
@@ -118,6 +122,11 @@ body {
 
 /* Mobile styles apply below 480px */
 @media (max-width: 480px) {
+    body {
+        background-size: cover;    /* Maintain cover */
+        background-position: center; /* Same focal point */
+        background-attachment: scroll; /* Better performance on mobile */
+    }
     .header-container {
         flex-direction: column; /* Stack logo & nav */
         text-align: center;
